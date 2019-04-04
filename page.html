@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" href="page.css">
+	<script type="text/javascript" src="node_modules/vis/dist/vis.js"></script>
+    <link href="node_modules/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+	<TITLE>
+		Genesys Dice Layout
+	</TITLE>
+</HEAD>
+<BODY>
+	<script type="text/javascript" src="face.js"></script>
+	<script type="text/javascript" src="fraction.js"></script>
+	<script type="text/javascript" src="die.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="text/javascript" src="display.js"></script>
+
+	<div id="dieSelector">
+		<div class="roller">
+			<img src="https://i.imgur.com/MknVLq9.png" alt="Boost Die" height="42" width="42">
+			<input id="Boost" type="number" min="0">
+		</div>
+		<div class="roller">
+			<img src="https://i.imgur.com/k9EJ4mX.png" alt="Ability Die" height="42" width="42">
+			<input id="Ability" type="number" min="0">
+		</div>
+		<div class="roller">
+			<img src="https://i.imgur.com/UDZCH71.png" alt="Proficiency Die" height="42" width="42">
+			<input id="Proficiency" type="number" min="0">
+		</div>
+		<div class="roller">
+			<img src="https://i.imgur.com/h6DNgKO.png" alt="Setback Die" height="42" width="42">
+			<input id="Setback" type="number" min="0">
+		</div>
+		<div class="roller">
+			<img src="https://i.imgur.com/Nkw9KEp.png" alt="Difficulty Die" height="42" width="42">
+			<input id="Difficulty" type="number" min="0">
+		</div>
+		<div class="roller">
+			<img src="https://i.imgur.com/2791Z2g.png" alt="Challenge Die" height="42" width="42">
+			<input id="Challenge" type="number" min="0">
+		</div>
+		<button onclick="generate()" class="roller">
+			Generate
+		</button>
+		<p id="faceCount" class="roller">
+		</p>
+	</div>
+	<div id="resultsDisplay" class="grid-container"></div>
+
+<script type="text/javascript">
+
+	drawVisualization();
+
+</script>
+
+</BODY>
+</HTML>
